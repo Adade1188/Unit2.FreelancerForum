@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <h1>The Average Starting for the Freelancer </h1>
+  <p>The average price before Carol is $40</p>
+  <p class="example">The updated average price is $50</p>
+
+  <h2>The new average prices</h2>
+  <p id="new"></p>
+
+  <script>
+    document.querySelector("p").style.backgroundColor = "brown"
+    document.querySelector(".example").style.backgroundColor = "gray"
+
+    setInterval(displayHello, 10000);
+
+    function displayHello() {
+      document.getElementById("new").innerHTML += "The average price is $50";
+    }
+  </script>
+</body>
+
+</html>
